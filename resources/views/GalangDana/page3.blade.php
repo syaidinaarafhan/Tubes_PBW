@@ -70,7 +70,7 @@
                 <textarea id="rincianPenggunaanDana" name="rincianPenggunaanDana" required></textarea>
             </div>    
             <div class="mt-10">
-                <label for="fotoGalangDana">Upload Foto Untuk Galang Dana:</label>
+                <label for="fotoGalangDana">Upload Foto Untuk Galang Dana: </label>
                 <input type="file" id="fotoGalangDana" name="fotoGalangDana" required>
             </div> 
     </div>          
