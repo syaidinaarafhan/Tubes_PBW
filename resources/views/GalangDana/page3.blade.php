@@ -1,34 +1,83 @@
 <x-app-layout>
     <form action="{{ route('galangdana.storetahap2') }}" method="POST" enctype="multipart/form-data">
         @csrf
+    <div class="ml-80 pl-20 flex pt-10 pb-5 bg-stone-300 w-min">
+        <div class="flex-none w-40 h-10">
+            1
+        </div>
+        <div class="flex-none w-40 h-10">
+            2
+        </div>
+        <div class="flex-none w-40 h-10">
+            3
+        </div>
+        <div class="flex-none w-40 h-10">
+            4
+        </div>
+        <div class="flex-none w-28 h-10">
+            5
+        </div>
+    </div>
 
-        <label for="judulKampanye">Judul Kampanye:</label>
-        <input type="text" id="judulKampanye" name="judulKampanye" required>
 
-        <label for="Tujuan">Tujuan:</label>
-        <textarea id="Tujuan" name="Tujuan" required></textarea>
-
-        <label for="Lokasi">Lokasi:</label>
-        <input type="text" id="Lokasi" name="Lokasi" required>
-
-        <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="30Hari">
-        <label>30 Hari</label>
- 
-        <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="60Hari">
-        <label>60 Hari</label>
-
-        <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="90Hari">
-        <label>90 Hari</label>
-
-        <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="120Hari">
-        <label>120 Hari</label>
-
-        <label for="rincianPenggunaanDana">Rincian Penggunaan Dana:</label>
-        <textarea id="rincianPenggunaanDana" name="rincianPenggunaanDana" required></textarea>
-
-        <label for="fotoGalangDana">Foto Kampanye:</label>
-        <input type="file" id="fotoGalangDana" name="fotoGalangDana" required>
-
-        <button type="submit">Lanjut ke Tahap 3</button>
+<div class="ml-64 bg-stone-100 w-2/3">
+        <div class="text-xl ml-5 pt-5"  >
+            <p>Isi data diri dibawah ini:</p>
+        </div >
+    <div class="ml-20">
+        <div class="mt-10">
+            <label for="judulKampanye">Nama / Judul Galang Dana:</label>
+            <input type="text" id="judulKampanye" name="judulKampanye" required>
+        </div>
+        <div class="mt-10">
+            <label for="Tujuan">Tujuan Penyelenggaraan Galang Dana</label>
+            <textarea id="Tujuan" name="Tujuan" required></textarea>
+        </div>
+        <div class="mt-10">
+            <label for="Lokasi">Lokasi Galang Dana</label>
+            <input type="text" id="Lokasi" name="Lokasi" required>
+        </div>
+        <div class="mt-10">
+            <label for="Lokasi">Perkiraan Dana yang dibutuhkan </label>
+            <input type="text" id="Lokasi" name="Lokasi" required>
+        </div>
+        <div class="mt-10">
+            <label for="Lokasi">Tentukan waktu galang dana berlangsung</label>
+            <input type="text" id="Lokasi" name="Lokasi" required>  
+        </div>
+        
+        <div class="flex  pl-28 flex py-5">
+            <div class="mx-10">
+                <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="30Hari">
+                <label>30 Hari</label>
+            </div>
+            <div class="mx-10">
+                <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="60Hari">
+                <label>60 Hari</label>
+            </div>
+            <div class="mx-10">
+                <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="90Hari">
+                <label>90 Hari</label>
+            </div>
+            <div class="mx-10">
+                <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="120Hari">
+                <label>120 Hari</label>
+            </div>
+        </div>
+        
+            <div class="mt-10">
+                <label for="rincianPenggunaanDana">Rincian Penggunaan Dana:</label>
+                <textarea id="rincianPenggunaanDana" name="rincianPenggunaanDana" required></textarea>
+            </div>    
+            <div class="mt-10">
+                <label for="fotoGalangDana">Upload Foto Untuk Galang Dana:</label>
+                <input type="file" id="fotoGalangDana" name="fotoGalangDana" required>
+            </div> 
+    </div>          
+</div>        
+        <button class=" text-center ml-80 pl-80 pt-8" type="submit">Lanjut ke Tahap 3</button>
     </form>
+    <div class="bg-orange-200 text-center">
+        <p>Mari Donasi</p>
+    </div>
 </x-app-layout>
