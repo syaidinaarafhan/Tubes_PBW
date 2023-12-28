@@ -14,7 +14,7 @@
                 <button class="bg-red-300 rounded-full w-10 h-10" >4</button>  
             </div>
             <div class="flex-none w-40 h-10 bg-yellow-400  rounded-full ">
-                <button class="bg-red-300 rounded-full w-10 h-10" >5</button>  
+                <button class="bg-red-300 rounded-full w-10 h-10" >5 </button>  
             </div>
         <!-- </div> -->
     </div>
