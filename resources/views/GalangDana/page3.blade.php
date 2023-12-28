@@ -66,7 +66,7 @@
         </div>
         
             <div class="mt-10">
-                <label for="rincianPenggunaanDana">Rincian Penggunaan Dana:</label>
+                <label for="rincianPenggunaanDana">Rincian Penggunaan Dana: </label>
                 <textarea id="rincianPenggunaanDana" name="rincianPenggunaanDana" required></textarea>
             </div>    
             <div class="mt-10">

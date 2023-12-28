@@ -22,7 +22,7 @@
         </div>
         <div class="pl-80">
             <div class="">
-                <p>Pemilik rekening bertanggung jawab atas penggunaan dana yang diterima dari galang dana ini</p>
+                <p>Pemilik rekening bertanggung jawab atas penggunaan dana yang diterima dari galang dana ini </p>
             </div>
             <div class="">
                 <p>Kamu sebagai penggalangan dana bertanggung jawab atas permintaan pencairan dan pelaporan penggunaan dana</p>

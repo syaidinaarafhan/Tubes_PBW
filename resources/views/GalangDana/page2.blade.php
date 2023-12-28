@@ -26,7 +26,7 @@
 
         <div class="ml-20">
             <div class="mt-10">
-                <label for="namaKTP">Nama KTP:</label>
+                <label for="namaKTP">Nama KTP :</label>
                 <input type="text" id="namaKTP" name="namaKTP" required>
             </div>
 
