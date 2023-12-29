@@ -18,7 +18,7 @@
     </div>
     <div class="bg-white bg-contain  ">
         <div class="text-center text-2xl pt-8">
-            <p>Apakah Anda Menyutujui Syarat dan ketentuan untuk Membuka Galang Dana </p>
+            <p>Apakah Anda Menyutujui Syarat dan ketentuan untuk Membuka Galang Dana ini </p>
         </div>
         <div class="pl-80">
             <div class="">
@@ -27,7 +27,7 @@
             <div class="">
                 <p>Kamu sebagai penggalangan dana bertanggung jawab atas permintaan pencairan dan pelaporan penggunaan dana</p>
             </div>
-        </div>
+        </div> 
     </div>
 
     <div class="pt-8 text-center ml-80 pl-80">

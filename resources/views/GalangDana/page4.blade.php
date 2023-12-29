@@ -28,7 +28,7 @@
         <label for="fotoKTP">Foto KTP:</label>
         <input type="file" id="fotoKTP" name="fotoKTP" required>
     </div>
-    <div class="mt-10">
+    <div class="mt-10"> 
         <label for="berkasLainnya">Berkas Lainnya: </label>
         <input type="file" id="berkasLainnya" name="berkasLainnya">
     </div>

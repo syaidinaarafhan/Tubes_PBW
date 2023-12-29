@@ -74,7 +74,7 @@
                 <input type="file" id="fotoGalangDana" name="fotoGalangDana" required>
             </div> 
     </div>          
-</div>        
+</div>         
         <button class=" text-center ml-80 pl-80 pt-8" type="submit">Lanjut ke Tahap 3</button>
     </form>
     <div class="bg-orange-200 text-center">

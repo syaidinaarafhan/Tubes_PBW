@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="ml-64 bg-stone-100 w-2/3">
-        <div class="text-xl ml-5 pt-5"  >
+        <div class="text-xl ml-5 pt-5"  > 
             <p>Isi data diri dibawah ini:  </p>
         </div >
 
