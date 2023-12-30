@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GalangDanaController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,5 +37,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/GalangDana/page4', [GalangDanaController::class, 'storeTahap3'])->name('galangdana.storeTahap3');
     Route::get('/dashboard', [GalangDanaController::class, 'dashboard'])->name('dashboard');
 }); 
+
+Route::get('/transaksi', [PaymentController::class, 'index'])->name('transaksi.index');
+
+Route::post('/transaksi', [PaymentController::class, 'store'])->name('transaksi.store');
+
+Route::get('/transaksi/checkout', [PaymentController::class, 'checkoutIndex'])->name('transaksi.checkout');
 
 require __DIR__.'/auth.php';

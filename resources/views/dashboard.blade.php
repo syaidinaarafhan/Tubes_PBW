@@ -19,11 +19,19 @@
                     <img src="{{ asset('/Kampanye/' . $campaign->fotoGalangDana) }}" alt="{{ $campaign->judulKampanye }}">
                 @endif
         @endforeach 
-    <x-danger-button>
+    <x-primary-button>
         <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
             <x-nav-link :href="route('galangdana.page')" :active="request()->routeIs('galangdana.page')">
                 {{ __('GalangDana') }}
             </x-nav-link>
         </div>
-    </x-danger-button>
+    </x-primary-button>
+
+    <x-primary-button>
+        <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+            <x-nav-link :href="route('transaksi.index')" :active="request()->routeIs('transaksi.index')">
+                {{ __('Bayar') }}
+            </x-nav-link>
+        </div>
+    </x-primary-button>
 </x-app-layout>
