@@ -1,20 +1,22 @@
 <x-app-layout> 
-    <div class="ml-80 pl-20 flex pt-5">
-        <div class="flex-none w-40 h-10">
-            1
-        </div>
-        <div class="flex-none w-40 h-10">
-            2
-        </div>
-        <div class="flex-none w-40 h-10">
-            3
-        </div>
-        <div class="flex-none w-40 h-10">
-            4
-        </div>
-        <div class="flex-none w-40 h-10">
-            5 
-        </div>
+<div class="ml-80 pl-20 flex pt-5 pb-5 bg-stone-300 w-min rounded-full">
+        <!-- <div class="flex-none w-40 h-10 bg-yellow-400 rounded-full"> -->
+            <div class="flex-none w-40 h-10 ">
+                <button class="bg-red-300 rounded-full w-10 h-10" >1</button>  
+            </div>
+            <div class="flex-none w-40 h-10 ">
+                <button class="bg-red-300 rounded-full w-10 h-10" >2</button>  
+            </div>
+            <div class="flex-none w-40 h-10 ">
+                <button class="bg-red-300 rounded-full w-10 h-10" >3</button>  
+            </div>
+            <div class="flex-none w-40 h-10 ">
+                <button class="bg-red-300 rounded-full w-10 h-10" >4 </button>  
+            </div>
+            <div class="flex-none w-32 h-10 ">
+                <button class="bg-red-300 rounded-full w-10 h-10" >5 </button>   
+            </div>
+        <!-- </div> -->
     </div>
     <div class="bg-white bg-contain  ">
         <div class="text-center text-2xl pt-8">
