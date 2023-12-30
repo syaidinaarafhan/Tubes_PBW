@@ -101,5 +101,15 @@ class GalangDanaController extends Controller
         $campaigns = GalangDanaModel::get();
         return view('dashboard', compact('campaigns'));
     }
+
+    public function KampById($id){
+        $campaign = GalangDanaModel::find($id);
+
+    if ($campaign) {
+        return view('kampPage', compact('campaign'));
+    } else {
+        return redirect()->route('dashboard')->withErrors('Campaign not found.');
+    }
+    }
     
 }

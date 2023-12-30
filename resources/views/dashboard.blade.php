@@ -14,11 +14,20 @@
             </div>
         </div>
     </div>
+        <div class="flex pt-20">
         @foreach ($campaigns as $campaign)
-                @if($campaign->fotoGalangDana)
-                    <img src="{{ asset('/Kampanye/' . $campaign->fotoGalangDana) }}" alt="{{ $campaign->judulKampanye }}">
-                @endif
-        @endforeach 
+        @if($campaign->fotoGalangDana)
+            <div class="ml-28 w-80 h-40 pt-5 text-center bg-blue-400">
+                <img src="{{ asset('/Kampanye/' . $campaign->fotoGalangDana) }}" 
+                alt="{{ $campaign->judulKampanye }}">
+                <p>{{ $campaign->Tujuan }}</p>
+                <p>{{ $campaign->Lokasi }}</p>
+                <a href="{{ route('kampPage', ['id' => $campaign->id]) }}">Detail</a>
+            </div>
+        @endif
+    @endforeach
+
+        </div>
     <x-primary-button>
         <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
             <x-nav-link :href="route('galangdana.page')" :active="request()->routeIs('galangdana.page')">

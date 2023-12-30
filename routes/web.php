@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/GalangDana/page4', [GalangDanaController::class, 'tahap3'])->name('galangdana.page4');
     Route::post('/GalangDana/page4', [GalangDanaController::class, 'storeTahap3'])->name('galangdana.storeTahap3');
     Route::get('/dashboard', [GalangDanaController::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard/{id}', [GalangDanaController::class, 'kampById'])->name('kampPage');
 }); 
 
 Route::get('/transaksi', [PaymentController::class, 'index'])->name('transaksi.index');

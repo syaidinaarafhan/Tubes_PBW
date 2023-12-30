@@ -37,17 +37,10 @@
             <label for="Lokasi">Lokasi Galang Dana</label>
             <input type="text" id="Lokasi" name="Lokasi" required>
         </div>
-        <div class="mt-10">
-            <label for="Lokasi">Perkiraan Dana yang dibutuhkan </label>
-            <input type="text" id="Lokasi" name="Lokasi" required>
-        </div>
-        <div class="mt-10">
-            <label for="Lokasi">Tentukan waktu galang dana berlangsung</label>
-            <input type="text" id="Lokasi" name="Lokasi" required>  
-        </div>
-        
+            
         <div class="flex  pl-28 flex py-5">
             <div class="mx-10">
+                <label for="Lokasi">Tentukan waktu galang dana berlangsung</label>
                 <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="30Hari">
                 <label>30 Hari</label>
             </div>

@@ -16,10 +16,13 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('kampanye_id');
             $table->decimal('price');
+            $table->string('username');
+            $table->integer('no_hp');
+            $table->string('pesan');
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('kampanye_id')->references('id')->on('galang_dana_models');
+            $table->contrained('kampanye_id')->references('id')->on('galang_dana_models');
         });
     }
 
