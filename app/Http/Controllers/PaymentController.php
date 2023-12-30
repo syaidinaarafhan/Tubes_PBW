@@ -39,7 +39,7 @@ class PaymentController extends Controller{
                 ),
                 'customer_details' => array(
                     'username' => $data['username'],
-                ),
+                ), 
             );
             $snapToken = \Midtrans\Snap::getSnapToken($params);
 

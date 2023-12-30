@@ -94,7 +94,7 @@ class GalangDanaController extends Controller
             return redirect()->route('dashboard');
         } else {
             return redirect()->back()->withErrors('Data validation failed.');
-        }
+        } 
     }
 
     public function dashboard(){

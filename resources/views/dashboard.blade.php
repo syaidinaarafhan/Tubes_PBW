@@ -33,7 +33,7 @@
             <x-nav-link :href="route('galangdana.page')" :active="request()->routeIs('galangdana.page')">
                 {{ __('GalangDana') }}
             </x-nav-link>
-        </div>
+        </div> 
     </x-primary-button>
 
     <x-primary-button>
