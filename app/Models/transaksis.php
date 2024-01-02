@@ -17,4 +17,9 @@ class transaksis extends Model
         'no_hp',
         'pesan',
     ];
+
+    public function kampanye()
+    {
+        return $this->belongsTo(GalangDanaModel::class, 'kamp_id');
+    }
 }

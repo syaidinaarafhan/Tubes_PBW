@@ -24,4 +24,8 @@ class GalangDanaModel extends Model
         'fotoKTP',
         'berkasLainnya',
     ];
+    public function transaksis()
+    {
+        return $this->hasMany(transaksis::class, 'kamp_id');
+    }
 }

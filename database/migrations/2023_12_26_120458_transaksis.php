@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     { 
-        Schema::create('transaksis', function(Blueprint $table){
+        Schema::create('transakses', function(Blueprint $table){
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('kampanye_id');
+            $table->unsignedBigInteger('kamp_id');
             $table->decimal('price');
             $table->string('username');
             $table->integer('no_hp');
@@ -22,7 +22,7 @@ return new class extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
-            $table->contrained('kampanye_id')->references('id')->on('galang_dana_models');
+            $table->foreign('kamp_id')->references('id')->on('galang_dana_models');
         });
     }
 
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaksis');
+        Schema::dropIfExists('transakses');
     }
 };

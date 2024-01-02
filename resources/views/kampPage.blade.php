@@ -6,7 +6,7 @@
 
     <x-primary-button>
         <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-            <x-nav-link :href="route('transaksi.index')" :active="request()->routeIs('transaksi.index')">
+            <x-nav-link :href="route('transaksi.index', ['id' => $campaign->id])" :active="request()->routeIs('transaksi.index')" id="pay-button">
                 {{ __('Bayar') }}
             </x-nav-link>
         </div>

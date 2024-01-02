@@ -1,4 +1,5 @@
 <x-payment-layout>
+<p>Nominal: {{ $newPrice }}</p>
     <button id="pay-button">bayar</button>
 <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ env('MIDTRANS_SERVER_KEY') }}"></script>
     <script type="text/javascript">

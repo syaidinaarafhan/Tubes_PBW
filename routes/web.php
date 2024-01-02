@@ -39,10 +39,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard/{id}', [GalangDanaController::class, 'kampById'])->name('kampPage');
 }); 
 
-Route::get('/transaksi', [PaymentController::class, 'index'])->name('transaksi.index');
+Route::get('/transaksi/index/{id}', [PaymentController::class, 'index'])->name('transaksi.index');
 
-Route::post('/transaksi', [PaymentController::class, 'store'])->name('transaksi.store');
+Route::post('/transaksi/index/{id}', [PaymentController::class, 'store'])->name('transaksi.store');
 
-Route::get('/transaksi/checkout', [PaymentController::class, 'checkoutIndex'])->name('transaksi.checkout');
+Route::get('/transaksi/checkout/{id}', [PaymentController::class, 'checkout'])->name('transaksi.checkout');
 
 require __DIR__.'/auth.php';
