@@ -1,6 +1,8 @@
 <x-app-layout> 
-    <div class="ml-80 pl-20 flex pt-5 pb-5 bg-stone-300 w-min rounded-full">
-        <!-- <div class="flex-none w-40 h-10 bg-yellow-400 rounded-full"> -->
+
+    <div class="ml-3 mt-10">
+    <div class="ml-96 pl-20 flex pt-5 pb-5 bg-stone-300 w-min rounded-full ">
+        <!-- <div class="flex-none w-40 h-10 bg-yellow-400 rounded-full"> -->   
             <div class="flex-none w-40 h-10 ">
                 <button class="bg-red-300 rounded-full w-10 h-10" >1</button>  
             </div>
@@ -18,8 +20,10 @@
             </div>
         <!-- </div> -->
     </div>
-    <div class="ml-64 bg-stone-100 w-2/3 sm:rounded-lg ">
-        <div class="text-2xl text-center pt-5">
+    </div>
+
+    <div class="ml-64 bg-slate-50 w-2/3 sm:rounded-lg mt-10 h-60">
+        <div class="text-2xl text-center pt-10">
             <p>Apakah Anda Menyutujui Syarat  dan ketentuan untuk Membuka Galang Dana</p>
         </div>
         <div class="text-lg ml-40 " >
@@ -32,12 +36,13 @@
         </div>
     </div>
 
-    <div class="text-right mr-24">
+    <div class="ml-96 pl-96">
         <x-nav-link :href="route('galangdana.page2')" :active="request()->routeIs('galangdana.page2')">
             {{ __('Next') }}
         </x-nav-link>
     </div>
-    <div class="bg-orange-200 text-center">
+    
+    <div class="fixed bottom-0 left-0 w-full bg-orange-300 text-center text-xl p-4">
         <p>Mari Donasi</p>
     </div>
 </x-app-layout> 

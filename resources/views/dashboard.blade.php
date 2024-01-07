@@ -1,46 +1,46 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-800 leading-tight">
-            {{ __('Ingin Donasi Hari Ini?') }}
+<div class="">
+        <h2 class="font-semibold text-2xl text-gray-800 leading-tight pt-5 pl-20">
+            {{ __('Ingin Donasi Apa Hari Ini?') }}
         </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
+        
+        <div class="flex bg-white mt-2 w-11/12 ml-16 rounded-lg">
+        <P class="text-xl pl-96 pt-2" >Ingin Menggalang Dana Untuk saling membantu ? Ajukan Disini</P>
+        <div class="pl-48">
+        <x-primary-button>
+            <div class="">
+                <x-nav-link :href="route('galangdana.page')" :active="request()->routeIs('galangdana.page')">
+                    {{ __('GalangDana') }}
+                </x-nav-link>
+            </div> 
+        </x-primary-button>
         </div>
     </div>
-        <div class="flex pt-20">
-        @foreach ($campaigns as $campaign)
+
+    <div class="bg-slate-50 w-10/12 ml-32 rounded-lg">
+    <div class="flex pt-5 flex-wrap mt-10">
+    @foreach ($campaigns as $index => $campaign)
         @if($campaign->fotoGalangDana)
-            <div class="ml-28 w-80 h-40 pt-5 text-center bg-blue-400">
+            <div class="ml-32 w-80 h-40 pt-5 text-center mb-40 text-xl">
                 <img src="{{ asset('/Kampanye/' . $campaign->fotoGalangDana) }}" 
-                alt="{{ $campaign->judulKampanye }}">
-                <p>{{ $campaign->Tujuan }}</p>
-                <p>{{ $campaign->Lokasi }}</p>
+                 class="w-full h-auto">
+                <p>{{ $campaign->judulKampanye }}</p>
                 <a href="{{ route('kampPage', ['id' => $campaign->id]) }}">Detail</a>
             </div>
+
+            <!-- Tambahkan elemen clearfix setiap setelah 3 elemen -->
+            @if(($index + 1) % 3 === 0)
+                <div class="clearfix"></div>
+            @endif
         @endif
     @endforeach
+</div>
+</div>
 
-        </div>
-    <x-primary-button>
-        <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-            <x-nav-link :href="route('galangdana.page')" :active="request()->routeIs('galangdana.page')">
-                {{ __('GalangDana') }}
-            </x-nav-link>
-        </div> 
-    </x-primary-button>
+    
+</div>
 
-    <x-primary-button>
-        <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-            <x-nav-link :href="route('transaksi.index')" :active="request()->routeIs('transaksi.index')">
-                {{ __('Bayar') }}
-            </x-nav-link>
-        </div>
-    </x-primary-button>
+<div class="bottom-0 left-0 w-full bg-orange-300 text-center text-xl p-4 mt-10">
+                <p>Mari Donasi</p>
+            </div> 
 </x-app-layout>

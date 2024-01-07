@@ -1,7 +1,8 @@
 <x-app-layout>
     <form action="{{ route('galangdana.storetahap2') }}" method="POST" enctype="multipart/form-data">
         @csrf
-        <div class="ml-80 pl-20 flex pt-5 pb-5 bg-stone-300 w-min rounded-full">
+    <div class="ml-3 mt-10">
+    <div class="ml-96 pl-20 flex pt-5 pb-5 bg-stone-300 w-min rounded-full ">
         <!-- <div class="flex-none w-40 h-10 bg-yellow-400 rounded-full"> -->
             <div class="flex-none w-40 h-10 ">
                 <button class="bg-red-300 rounded-full w-10 h-10" >1</button>  
@@ -18,11 +19,11 @@
             <div class="flex-none w-32 h-10 ">
                 <button class="bg-red-300 rounded-full w-10 h-10" >5 </button>   
             </div>
-        <!-- </div> -->
+        </div>
     </div>
 
 
-<div class="ml-64 bg-stone-100 w-2/3 sm:rounded-lg">
+<div class="ml-64 bg-gray-100 w-2/3 sm:rounded-lg mt-10 ">
         <div class="text-xl ml-5 pt-5"  >
             <p>Isi data diri dibawah ini:</p>
         </div >
@@ -39,10 +40,11 @@
             <label for="Lokasi">Lokasi Galang Dana</label>
             <input type="text" id="Lokasi" name="Lokasi" required>
         </div>
-            
+       
+        <div class="pt-10">
+        <label for="Lokasi">Tentukan waktu galang dana berlangsung</label>
         <div class="flex  pl-28 flex py-5">
             <div class="mx-10">
-                <label for="Lokasi">Tentukan waktu galang dana berlangsung</label>
                 <input type="radio" id="perkiraanWaktu" name="perkiraanWaktu" value="30Hari">
                 <label>30 Hari</label>
             </div>
@@ -59,12 +61,13 @@
                 <label>120 Hari</label>
             </div>
         </div>
+        </div>
         
             <div class="mt-10">
                 <label for="rincianPenggunaanDana">Rincian Penggunaan Dana: </label>
                 <textarea id="rincianPenggunaanDana" name="rincianPenggunaanDana" required></textarea>
             </div>    
-            <div class="mt-10">
+            <div class="mt-10 pb-10">
                 <label for="fotoGalangDana">Upload Foto Untuk Galang Dana:  </label>
                 <input type="file" id="fotoGalangDana" name="fotoGalangDana" required>
             </div> 
@@ -72,7 +75,8 @@
 </div>         
         <button class=" text-center ml-80 pl-80 pt-8" type="submit">Lanjut ke Tahap 3</button>
     </form>
-    <div class="bg-orange-200 text-center">
-        <p>Mari Donasi</p>
-    </div>
+
+    <div class="bottom-0 left-0 w-full bg-orange-300 text-center text-xl p-4 ">
+                <p>Mari Donasi</p>
+            </div>
 </x-app-layout>
